@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container {
+
+    background:white;
+    width:90%;
+    max-width:420px;
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.2);
+}
+
+
+input {
+
+    width:90%;
+    padding:12px;
+    margin:10px;
+    border-radius:10px;
+    border:1px solid #ccc;
+
+}
+
+
+button {
+
+    background:#ff4f81;
+    color:white;
+    border:none;
+    padding:15px 25px;
+    border-radius:25px;
+    font-size:16px;
+    margin-top:15px;
+
+}
+
+
+.answer {
+
+    display:block;
+    width:100%;
+    margin:10px 0;
+}
+
+
+.progress {
+
+    background:#eee;
+    height:12px;
+    border-radius:10px;
+    overflow:hidden;
+
+}
+
+
+#bar {
+
+    height:100%;
+    width:0%;
+    background:#ff4f81;
+
+}
+
+#letters{
+    display:flex;
+    justify-content:center;
+    gap:12px;
+    margin:20px 0;
+}
+
+.letter{
+    width:45px;
+    height:45px;
+    border-radius:10px;
+    border:2px solid #ff4f81;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+    font-weight:bold;
+    background:#f3f3f3;
+}
+
+.locked{
+    color:#bbb;
+}
+
+.unlocked{
+    background:#ff4f81;
+    color:white;
+}

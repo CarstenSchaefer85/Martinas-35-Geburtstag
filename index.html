@@ -10,40 +10,47 @@
 <body>
 
 <div class="container">
-
+	<!-- LOGIN -->
 	<div id="login">
-		<h1>
-			Liebe Martina ❤️,<br>
-			alles Gute zum Geburtstag
-		</h1>
-		<p>
-			Ich habe ein kleines Rätsel für dich vorbereitet.<br>
-			Beantworte die Fragen und erspiele das geheime Lösungswort zu deinem Geschenk.
-		</p>
-		<p>
-			Gib dein Geburtsdatum ein:
-		</p>
+		<h2 id="loginTitle"></h2>
+		<div id="loginText"></div>
 		<input id="code" placeholder="DD.MM.YYYY">
-		<button onclick="login()">Start</button>
+		<button onclick="showLogin()">Start</button>
 	</div>
+	
+	<!-- EINLEITUNG -->
+    <div id="intro" style="display:none">
+        <h1 id="introTitle"></h1>
+        <div id="introText"></div>
+        <button onclick="startQuiz()">Quiz starten</button>
+    </div>
 
+	 <!-- QUIZ -->
 	<div id="quiz" style="display:none">
-		<h2 id="title"></h2>
+		<h2 id="questionTitle"></h2>
 		<div class="progress">
 			<div id="bar"></div>
 		</div>
 		<div id="letters"></div>
-
 		<div class="question-box">
-			<h2 id="question"></h2>
-			<div id="answers"></div>
+			<div id="questionContext"></div>
+			<h2 id="questionText"></h2>
+			<div id="questionAnswers"></div>
 		</div>
 	</div>
+	
+	<!-- ZUSATZSEITE NACH FRAGE 6 -->
+    <div id="middle" style="display:none">
+        <h1 id="middleTitle"></h1>
+        <div id="middleText"></div>
+        <button onclick="continueQuiz()">Weiter</button>
+    </div>
 
-	<div id="result" style="display:none">
-		<h2>🎉 Geschafft!</h2>
-		<p id="resultText"></p>
-	</div>
+    <!-- SCHLUSS -->
+    <div id="result" style="display:none">
+        <h1 id="resultTitle"></h1>
+		<div id="resultText"></div>
+    </div>
 
 </div>
 <script src="script.js"></script>

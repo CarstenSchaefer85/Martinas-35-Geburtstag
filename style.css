@@ -19,6 +19,10 @@ body {
     box-shadow:0 10px 30px rgba(0,0,0,.2);
 }
 
+.container p {
+    text-align: justify;
+    line-height: 1.6;
+}
 
 input {
 
@@ -28,6 +32,32 @@ input {
     border-radius:10px;
     border:1px solid #ccc;
 
+}
+
+#questionContext {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#questionText {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.5;
+}
+
+#resultText {
+    font-family: Arial, sans-serif;
+    font-size: 22px;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 1.5;
+    margin-bottom: 20px;
 }
 
 

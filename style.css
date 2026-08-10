@@ -1,130 +1,349 @@
-body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+/* =========================
+   GRUNDSTIL
+   ========================= */
+
+* {
+    box-sizing: border-box;
 }
+
+body {
+    margin: 0;
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #333;
+}
+
+
+/* =========================
+   HAUPT-CONTAINER
+   ========================= */
 
 .container {
+    width: 90%;
+    max-width: 420px;
 
-    background:white;
-    width:90%;
-    max-width:420px;
-    padding:30px;
-    border-radius:20px;
-    text-align:center;
+    background: #fff;
 
-    box-shadow:0 10px 30px rgba(0,0,0,.2);
+    padding: 30px;
+
+    border-radius: 20px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
 }
 
-.container p {
-    text-align: justify;
+
+/* =========================
+   ÜBERSCHRIFTEN
+   ========================= */
+
+h1,
+h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 22px;
+}
+
+
+/* =========================
+   TEXTE
+   ========================= */
+
+.container p,
+#introText,
+#middleText,
+#resultText {
+    font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
 }
+
+#resultText {
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   BUTTONS
+   ========================= */
+
+button {
+    background: #ff4f81;
+    color: white;
+
+    border: none;
+    border-radius: 25px;
+
+    padding: 14px 25px;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    margin-top: 15px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+button:hover {
+    background: #e83e70;
+    transform: translateY(-2px);
+
+    box-shadow: 0 5px 12px rgba(255, 79, 129, 0.3);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+
+/* =========================
+   EINGABEFELDER
+   ========================= */
 
 input {
+    width: 90%;
 
-    width:90%;
-    padding:12px;
-    margin:10px;
-    border-radius:10px;
-    border:1px solid #ccc;
+    padding: 12px;
 
+    margin: 10px;
+
+    border-radius: 10px;
+
+    border: 1px solid #ccc;
+
+    font-size: 16px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #ff4f81;
+}
+
+
+/* =========================
+   QUIZ
+   ========================= */
+
+#questionTitle {
+    margin-bottom: 15px;
+}
+
+
+/* Fortschrittsbalken */
+
+.progress {
+    width: 100%;
+    height: 12px;
+
+    background: #eee;
+
+    border-radius: 10px;
+
+    overflow: hidden;
+
+    margin-bottom: 20px;
+}
+
+#bar {
+    height: 100%;
+    width: 0%;
+
+    background: #ff4f81;
+
+    border-radius: 10px;
+
+    transition: width 0.3s ease;
+}
+
+
+/* =========================
+   BUCHSTABEN
+   ========================= */
+
+#letters {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+
+    margin: 20px 0;
+}
+
+.letter {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 10px;
+
+    border: 2px solid #ff4f81;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    font-weight: bold;
+
+    background: #f3f3f3;
+
+    transition: all 0.3s ease;
+}
+
+.locked {
+    color: #bbb;
+}
+
+.unlocked {
+    background: #ff4f81;
+    color: white;
+}
+
+
+/* =========================
+   FRAGE
+   ========================= */
+
+.question-box {
+    margin-top: 20px;
 }
 
 #questionContext {
-    font-family: Arial, sans-serif;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: normal;
+
     text-align: justify;
-    line-height: 1.5;
+
+    line-height: 1.6;
+
     margin-bottom: 20px;
 }
 
 #questionText {
-    font-family: Arial, sans-serif;
     font-size: 22px;
     font-weight: bold;
-    text-align: center;
-    line-height: 1.5;
-}
 
-#resultText {
-    font-family: Arial, sans-serif;
-    font-size: 22px;
-    font-weight: normal;
-    text-align: justify;
+    text-align: center;
+
     line-height: 1.5;
+
     margin-bottom: 20px;
 }
 
 
-button {
+/* =========================
+   ANTWORTEN
+   ========================= */
 
-    background:#ff4f81;
-    color:white;
-    border:none;
-    padding:15px 25px;
-    border-radius:25px;
-    font-size:16px;
-    margin-top:15px;
-
+#questionAnswers {
+    margin-top: 15px;
 }
-
 
 .answer {
+    display: block;
 
-    display:block;
-    width:100%;
-    margin:10px 0;
+    width: 100%;
+
+    margin: 10px 0;
+
+    padding: 13px 15px;
+
+    border: 2px solid #eee;
+
+    border-radius: 12px;
+
+    background: #f8f8f8;
+
+    color: #333;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.answer:hover {
+    background: #f8f8f8;
+    border-color: #3498db;
+
+    transform: translateY(-1px);
 }
 
 
-.progress {
+/* =========================
+   EINHEITLICHE KARTEN
+   ========================= */
 
-    background:#eee;
-    height:12px;
-    border-radius:10px;
-    overflow:hidden;
-
+#intro,
+#quiz,
+#middle,
+#result {
+    width: 100%;
 }
 
 
-#bar {
+/* =========================
+   MOBILE
+   ========================= */
 
-    height:100%;
-    width:0%;
-    background:#ff4f81;
+@media (max-width: 480px) {
 
-}
+    body {
+        padding: 15px;
+    }
 
-#letters{
-    display:flex;
-    justify-content:center;
-    gap:12px;
-    margin:20px 0;
-}
+    .container {
+        width: 100%;
+        padding: 25px 20px;
+    }
 
-.letter{
-    width:45px;
-    height:45px;
-    border-radius:10px;
-    border:2px solid #ff4f81;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    font-size:24px;
-    font-weight:bold;
-    background:#f3f3f3;
-}
+    h1 {
+        font-size: 25px;
+    }
 
-.locked{
-    color:#bbb;
-}
+    #questionContext,
+    #introText,
+    #middleText,
+    #resultText {
+        font-size: 17px;
+    }
 
-.unlocked{
-    background:#ff4f81;
-    color:white;
+    #questionText {
+        font-size: 20px;
+    }
+
+    #letters {
+        gap: 8px;
+    }
+
+    .letter {
+        width: 40px;
+        height: 40px;
+        font-size: 21px;
+    }
 }

@@ -41,7 +41,7 @@ Heute wollen dir uns auf eine kleine Zeitreise durch diese Erinnerungen begeben.
 Dieses Krypto Box gehört dir.
 Sie enthält den nächsten Teil deines Geschenkes.
 <br><br>
-Allerdings ist es verschlossen und den Schlüssel musst du dir erst erspielen.
+Allerdings ist sie verschlossen und den Schlüssel musst du dir erst erspielen.
 In zwölf Fragen geht es nicht nur um das Leben auf mittelalterlichen Burgen, sondern vor allem um unsere gemeinsame Geschichte.
 Bei jeder Frage gibt es eine richtige Antwort.
 Wenn du ausreichend Fragen richtig beantwortet hast, wirst du am Ende ein Lösungswort erhalten.
@@ -146,7 +146,7 @@ let questions = [
 	title: "🎭 Frage 8 – Unterhaltung am Hof",
 	context:"Wenn auf einer Burg ein Fest gefeiert wurde, durfte die Unterhaltung natürlich nicht fehlen. Musiker, Schauspieler und Gaukler sorgten dafür, dass die Gäste einen besonderen Abend erlebten.\n\nKonzerte, Shows und Comedy haben auch unsere gemeinsame Geschichte um einige besondere Abende bereichert. Manche davon waren erste gemeinsame Erlebnisse, andere haben wir bereits vor unserer Beziehung schon einmal erlebt.",
 	question:"Wo war Carsten nicht zum ersten Mal zusammen mit Martina?",
-	anser:["Pink Konzert","Let's Dance Tour","Die Ärzte Konzert","Martina Schwarzmann"],
+	anser:["Pink Konzert","Let's Dance Tour","Die Ärzte Konzert","The Nogoodniks"],
 	correct: 2
 },
 {
@@ -172,10 +172,10 @@ let questions = [
 },
 {
 	title: "💌 Frage 12 – Die drei wichtigsten Worte",
-	context:"Auf einer Burg konnten viele Dinge von großer Bedeutung sein: ein gewonnenes Turnier, eine geschlossene Ehe, ein Bündnis zwischen zwei Adelshäusern oder ein Versprechen für die Zukunft.\n\nDoch für eine ganz persönliche Geschichte braucht es manchmal keine große Zeremonie und kein prunkvolles Fest.\n\nManchmal reichen drei Worte.Es gibt einen ganz besonderen Moment unserer Geschichte, den wir mit einem Auftritt von Uli Böttcher verbinden. Das erste Mal „Ich liebe dich“.",
-	question:"Welches Programm von Uli Böttcher haben wir uns davor angesehen?",
-	anser:["1","2","3","4"],
-	correct: 0
+	context:"Auf einer Burg konnten viele Dinge von großer Bedeutung sein: ein gewonnenes Turnier, eine geschlossene Ehe, ein Bündnis zwischen zwei Adelshäusern oder ein Versprechen für die Zukunft.\n\nDoch für eine ganz persönliche Geschichte braucht es manchmal keine große Zeremonie und kein prunkvolles Fest.\n\nManchmal reichen drei Worte. Es gibt einen ganz besonderen Moment unserer Geschichte, den wir mit einem beeindruckenden Sternenhimmel verbinden. Das erste Mal „Ich liebe dich“.",
+	question:"Welchen Comedian haben wir uns davor angesehen?",
+	anser:["Martina Schwarzmann","Uli Böttcher","Lisa Eckhart","Eva Eiselt"],
+	correct: 1
 }
 ];
 
